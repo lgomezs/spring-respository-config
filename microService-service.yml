@@ -1,9 +1,14 @@
-# HTTP Server
+spring:
+  application:
+    name: microService
+
 server:  
-  port: 0   # HTTP port
+  port: 8083   # HTTP port
 
 # Discovery Server Access
 eureka:  
   client:
+    registerWithEureka: true
+    fetchRegistry: true	
     serviceUrl:
-      defaultZone: http://eureka-server:1111/eureka/
+      defaultZone: http://discovery-server:1111/eureka/
