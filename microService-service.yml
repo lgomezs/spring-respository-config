@@ -3,7 +3,7 @@ spring:
     name: microService
 
 server:  
-  port: 8083   # HTTP port
+  port: 8761
 
 # Discovery Server Access
 eureka:  
@@ -12,3 +12,5 @@ eureka:
     fetchRegistry: true	
     serviceUrl:
       defaultZone: http://discovery-server:1111/eureka/
+    instance:
+     hostname: localhost
