@@ -3,7 +3,7 @@ spring:
     name: microService
 
 server:  
-  port: 8761
+  port: ${PORT:3333}
 
 # Discovery Server Access
 eureka:  
