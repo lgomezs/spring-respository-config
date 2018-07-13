@@ -6,6 +6,15 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery-server:1111/eureka/
 
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'INFO'
+    org.springframework.web: 'INFO'
+    com.atsistemas: 'DEBUG'
+
+#para la llamada al microservicio contacto - balanceo
 microServiceRest:  
   microService:
     name: contacto
