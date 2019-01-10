@@ -20,3 +20,5 @@ microServiceRest:
   microService:
     name: contacto
     pingUrl: http://${microServiceRest.microService.name}/
+    
+    
