@@ -16,9 +16,9 @@ logging:
     com.atsistemas: 'DEBUG'
 
 #para la llamada al microservicio contacto - balanceo
-microServiceRest:  
-  microService:
+appMicroService:  
+  microService-mant:
     name: contacto
-    pingUrl: http://${microServiceRest.microService.name}/
+    pingUrl: http://${appMicroService.microService-mant.name}
     
     
