@@ -1,0 +1,13 @@
+identity:
+  keyvault:
+    uri: https://akv-eu1-c003-mvrk-dev-01.vault.azure.net/
+    clientid:  '{cipher}7b5ba117920b42a97135977f10cede702e9416dc4dbb77a74605a12d9938393b'
+    clientkey: '{cipher}98c57df8aee97262125a1f01b5a12d11d977358f0559f8b9197a3089f625055a'
+   
+  mongodb:
+    keyvault:
+      secretname: kvsecretcdbdev01
+    dbname: promavdevadb01
+    collectionuser: promavuser
+    collectioncustomer: promavagreements
+    collectionquestions: promavquestions
